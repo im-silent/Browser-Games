@@ -1,4 +1,3 @@
-
 function KeyboardInputManager() {
   this.events = {};
 
