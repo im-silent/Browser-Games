@@ -1,0 +1,156 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+::selection {
+  background: #000;
+  color: #aaf;
+}
+.alternate ::selection {
+  background: #c00;
+  color: #000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 2000px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+ul, li, h1, h2, h3, h4, h5, h6, p, a, .logo {
+  font-family: "Lato","Verdana",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.inner {
+  width: 800px;
+  position: relative;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  padding-top: 25px;
+  background: #000;
+  transition: 0.7s all;
+  z-index: 100;
+}
+
+header.alt-header {
+  background: #fff;
+}
+
+.alt-header a {
+  color: #000;
+}
+
+body.header-fixed header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  overflow: hidden;
+}
+
+nav ul {
+  float: right;
+}
+
+nav li {
+  display: inline;
+  float: left;
+}
+
+nav a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  transition: 0.3s all;
+  
+}
+
+nav a:hover {
+  background: #002;
+}
+
+.logo {
+  float: left;
+  color: #fff;
+  font-size: 50px;
+  line-height: 50px;
+  transition: 0.7s all;
+  padding-bottom: 10px;
+  
+}
+
+.alt-header .logo {
+  color: #000;
+}
+
+body.header-fixed .logo {
+  font-size: 30px;
+}
+
+.alternate {
+  background: #000;
+  color: #fff;
+}
+
+section .inner {
+  padding-top: 200px;
+}
+.button {
+  background-color: #3654ff;
+  color: #fff;
+  width: 9.6em;
+  height: 4em;
+  border: #3654ff 0.2em solid;
+  border-radius: 11px;
+  text-align: right;
+  transition: all 0.6s ease;
+}
+
+.button:hover {
+  background-color: #ffffff00;
+  color: black;
+}
+
+.button svg {
+  width: 1.4em;
+  margin: -0.2em 0.8em 1em;
+  position: absolute;
+  display: flex;
+  transition: all 0.6s ease;
+}
+
+.button:hover svg {
+  transform: translateX(5px);
+}
+
+.text {
+  margin: 0 1.5em;
+  
+}

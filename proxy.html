@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>GameUB</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <head><meta name="google-site-verification" content="EAiJ278xeRmNQo5SBRY7J0Rjwo4i-fjg4HLz_IIOnw4" 
+          </head>
+
+<body>
+  
+  <header id="topnav">
+  <div class="inner">
+    <div class="logo">GameUB</div>
+    <nav role='navigation'>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="proxy.html">Proxy</a></li>
+        <li><a href="movies.html">Movies</a></li>
+      </ul>
+    </nav>  
+  </div>
+</header>
+  <br><br><br><br>
+  <center>
+  <button onclick="openGame()" class="button">
+
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+  </svg>
+
+  
+  <div class="text">
+    Proxy
+  </div>
+
+</button></center>
+  <script src="script.js"></script>
+
+</body>
+
+<script>
+
+  
+function openGame() {
+	var win = window.open ()
+	var url = "https://pluralsight.gq/"
+	var iframe = win.document.createElement('iframe')
+	iframe.style.width = "100%"
+	iframe.style.height = "100%"
+	iframe.style.border = "none"
+	iframe.src = url
+	win.document.body.appendChild(iframe)
+}
+
+  
+</script>
+
+</html>
