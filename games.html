@@ -391,6 +391,20 @@
 
 </button></center>
 
+<br>
+  <center>
+  <button onclick="openGame18dot5()" class="button">
+
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+  </svg>
+
+  <div class="text">
+    Subway Surfers
+  </div>
+
+</button></center>
+
 
 
 <br>
@@ -711,6 +725,17 @@ function openGame17() {
 function openGame18() {
 	var win = window.open ()
 	var url = "https://im-silent.github.io/Browser-Games/soccerrandom/index.html"
+	var iframe = win.document.createElement('iframe')
+	iframe.style.width = "100%"
+	iframe.style.height = "100%"
+	iframe.style.border = "none"
+	iframe.src = url
+	win.document.body.appendChild(iframe)
+}
+
+function openGame18dot5() {
+	var win = window.open ()
+	var url = "https://uncommonmulticoloredcoderesource--j39832519.repl.co/subwaysurfers/index.html"
 	var iframe = win.document.createElement('iframe')
 	iframe.style.width = "100%"
 	iframe.style.height = "100%"
